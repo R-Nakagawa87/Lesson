@@ -74,6 +74,7 @@ public class IfSample {
 		}else {
 			System.out.println("評価：C");
 		}
+
 	}
 
 }
