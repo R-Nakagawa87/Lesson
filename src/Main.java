@@ -5,16 +5,16 @@ public class Main {
 		// TODO 自動生成されたメソッド・スタブ
 		String name = "Nakagawa";
 		System.out.println("名前は" + name + "です");
-		
+
 		//日付を表示
 		int tuki = 4, hi = 22;
-		System.out.println("今日は" + tuki + "月" + hi + "日です");
-		
+		System.out.println("今日は" + tuki + "月" + hi + "日");
+
 		double pi = 3.14;
 		System.out.println("円周率は" + pi + "です");
 	}
 
-	
+
 	static public void ensyu1_2(){
 	    //練習1-2
 	    int a = 3, b = 5;
@@ -23,7 +23,7 @@ public class Main {
 	    System.out.println("練習1-2");
 	    System.out.println(c);
 	}
-	
+
 	static public void ensyu1_3(){
 	    //練習1-3
 	    boolean b = true;
@@ -35,6 +35,6 @@ public class Main {
 	    System.out.println(c);
 	    System.out.println(d);
 	    System.out.println(l);
-	}    
-	
+	}
+
 }
