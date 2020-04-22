@@ -39,22 +39,36 @@ public class Main {
 		int n = (int)3.0;
 		String s = "ベスト" + 3;
 
+		//キャスト変換を使用して平均を求める
 		int kokugo = 70, sansu = 75;
 		double heikin = ((double)kokugo + (double)sansu) / 2;
+		//double heikin = (kokugo + sansu) / 2.0;
 		System.out.println("国語(70点)と算数(75点)の平均は" + heikin + "点");
 
-	}
+		//35にならないように！
+		int num1 = 3, num2 = 5;
+		System.out.println("足し算の結果は" + (num1 + num2));
 
-	static public void lesson4_22() {
+		//改行無しのprint
+		System.out.print("私は");
+		System.out.print("中川");
+		System.out.print("です\n");
 
-	}
+		//比較して最大値を出力
+		int m = Math.max(10, 20);
+		System.out.println("10と20で大きい方は" + m);
 
-	static public void lesson4_23() {
+		//文字列を数列に変換する
+		String age = "31";
+		int nAge = Integer.parseInt(age);
+		System.out.println("31歳の次は" +  (nAge+1) + "歳です");
 
-	}
+		//乱数発生（90未満を出力として）
+		int r = new java.util.Random().nextInt(90);
+		System.out.println("90未満で乱数を発生させた結果" + r);
 
-	static public void lesson4_24() {
-
+		int saikoro = new java.util.Random().nextInt(6) + 1;
+		System.out.println("サイコロを振りました.結果は" + saikoro);
 	}
 
 	static public void ensyu1_2(){
