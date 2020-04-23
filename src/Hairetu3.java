@@ -48,7 +48,7 @@ public class Hairetu3 {
 			}
 		}
 		System.out.println("最大値は：" + max);
-
+		
 	}
 
 }
