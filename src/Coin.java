@@ -10,7 +10,7 @@ public class Coin {
 			System.out.println(coins[i] + "円玉は何枚？");
 			coinCount = new java.util.Scanner(System.in).nextInt();
 
-			sum = sum + coins[i] * coinCount;
+			sum = sum + coin * coinCount;
 			i++;
 			}
 
