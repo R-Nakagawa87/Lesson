@@ -1,9 +1,15 @@
+import java.util.Arrays;
 
 public class Hairetu3 {
 
 	public static void main(String[] args) {
 		//intの配列numsに8,5,9,2,4を入れる
 		int[] nums = {8,5,9,2,4};
+
+		Arrays.sort(nums);
+
+		//配列の要素全てを10にする
+		Arrays.fill(nums,  10);
 
 		//配列の中身を全て表示
 		System.out.print("numsの中身：");
@@ -48,7 +54,7 @@ public class Hairetu3 {
 			}
 		}
 		System.out.println("最大値は：" + max);
-		
+
 	}
 
 }
