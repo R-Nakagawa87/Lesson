@@ -46,15 +46,27 @@ public class Hairetu2 {
 			System.out.print(value + " ");
 		}
 		System.out.println();
-		
+
 		//String型の文字数を求める
 		String[] names2 = {"コーラ", "コーヒー", "水"};
 		for(String value:names2) {
-			System.out.print(names2 + "は" + value.length() + "文字 ");
+			System.out.print(value + "は" + value.length() + "文字 ");
 		}
 		System.out.println();
 		System.out.println();
+
+		//double型で拡張for文
+		double[] kions = {15.5,20.1,18.3};
+		for(double kion:kions) {
+			showKion(kion);
+		}
+		System.out.println();
 	}
-	
+
+
+	public static void showKion(double num) {
+		System.out.print(num + "度 ");
+	}
+
 
 }

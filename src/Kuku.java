@@ -5,6 +5,12 @@ public class Kuku {
 		System.out.println("九九の練習をします");
 		System.out.println("答えを入力してください");
 
+		mondai();
+
+		System.out.println("練習を終了します");
+	}
+
+	public static void mondai() {
 		for(int i=0; i<5; i++) {
 			//計算に使う2つの数を発生
 			int r1 = new java.util.Random().nextInt(9) + 1;
@@ -25,8 +31,5 @@ public class Kuku {
 				System.out.println("正解は" + trueKotae);
 			}
 		}
-		System.out.println("練習を終了します");
-
 	}
-
 }
