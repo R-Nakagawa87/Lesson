@@ -19,7 +19,7 @@ public class KujiMain {
 
 			kc.check(kj);
 			kj.show();
-			System.out.println("現在の金額："+kc.kingaku);
+			System.out.println("現在の金額："+kc.kingaku+"円");
 		}
 
 	}
