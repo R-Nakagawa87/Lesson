@@ -1,5 +1,7 @@
 package obj;
 
+import java.util.ArrayList;
+
 public class KujiMain {
 
 	public static void main(String[] args) {
@@ -7,21 +9,19 @@ public class KujiMain {
 		KujiChecker kc = new KujiChecker();
 		Kuji kj = new Kuji();
 
+		ArrayList<Integer> bangos = new ArrayList<Integer>();
+		bangos.add(123456);
+		bangos.add(345612);
+		bangos.add(569874);
 
-		kj.bango = 123456;
-		kc.check(kj);
-		kj.show();
-		System.out.println("現在の金額："+kc.kingaku);
+		for(int ban:bangos) {
+			kj.bango = ban;
 
-		kj.bango = 356412;
-		kc.check(kj);
-		kj.show();
-		System.out.println("現在の金額："+kc.kingaku);
-
-		kj.bango = 169546;
-		kc.check(kj);
-		kj.show();
-		System.out.println("現在の金額："+kc.kingaku);
+			kc.check(kj);
+			kj.show();
+			System.out.println("現在の金額："+kc.kingaku);
 		}
+
+	}
 
 }
