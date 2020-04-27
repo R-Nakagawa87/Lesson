@@ -23,6 +23,7 @@ public class Gengo {
 
 
 	public static int getSeireki(int gengou, int nen){
+
 		if(gengou == 1) {
 			return (1925 + nen);
 		}
