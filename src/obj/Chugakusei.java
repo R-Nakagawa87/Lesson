@@ -19,8 +19,8 @@ public class Chugakusei extends Seito{
 	}
 
 
-	int sum=0;
 	int goukei() {
+		int sum=0;
 		sum += this.kokugo;
 		sum+= this.sansu;
 		sum+= this.shakai;
