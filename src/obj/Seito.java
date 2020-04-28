@@ -8,6 +8,13 @@ public class Seito {
 	double ave;
 
 
+	public Seito(String name,int kokugo,int sansu,int shakai) {
+		this.name=name;
+		this.kokugo=kokugo;
+		this.sansu=sansu;
+		this.shakai=shakai;
+	}
+
 	void show() {
 		System.out.println("テスト結果 氏名："+this.name);
 		System.out.println("国語："+this.kokugo+"点 算数："+this.sansu+"点 社会："+this.shakai+"点");
