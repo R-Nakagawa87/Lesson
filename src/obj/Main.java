@@ -8,6 +8,8 @@ public class Main {
 		s.hight = 10;
 		s.width = 2;
 
+		Sankaku san = new Sankaku(50,8);
+
 		s.menseki();
 		s.menseki(20, 2);
 

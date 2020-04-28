@@ -1,13 +1,6 @@
 package Sukkiri;
 
-public class Hero {
-
-	String name;	//名前の宣言
-	int hp;	//HPの宣言
-	Sword sword;
-	int baseAttackDamage;	//基礎攻撃力
-	int attackDamage;	//装備使用時攻撃力
-
+public class Hero extends Character{
 
 	//コンストラクタ
 	public Hero(String name) {
@@ -19,6 +12,7 @@ public class Hero {
 	public Hero() {
 		this.name = "Mob";
 		this.hp = 100;
+		this.baseAttackDamage = 10;
 	}
 
 	//攻撃時の行動

@@ -4,9 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		//剣生成
-		Sword s1 = new Sword();
-		s1.name = "日輪刀";
-		s1.damage = 10;
+		Sword s1 = new Sword("日輪刀",10);
 
 		//勇者1生成
 		Hero h1 = new Hero("ミナト");
