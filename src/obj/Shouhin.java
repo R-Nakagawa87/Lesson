@@ -6,7 +6,7 @@ public class Shouhin {
 	int price;
 
 	void show() {
-		System.out.println(this.name + this.price + "円");
+		System.out.println("商品名："+this.name +"  " + this.price + "円");
 	}
 
 	void showTax(String name, int price) {
@@ -14,7 +14,7 @@ public class Shouhin {
 	}
 
 	void show(String name, int price) {
-		System.out.println(name + price + "円");
+		System.out.println("商品名："+name + "  " + price + "円");
 	}
 
 

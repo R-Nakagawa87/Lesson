@@ -2,8 +2,24 @@ package Sukkiri;
 
 public class Character implements Creature{
 
+	//名前を定義
 	String name;
-	int hp;
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	//HPを定義
+		private int hp;
+		public int getHp() {
+			return this.hp;
+		}
+		public void setHp(int hp) {
+			this.hp = hp;
+		}
+
 	Sword sword;
 	int baseAttackDamage;	//基礎攻撃力
 	int attackDamage;	//装備使用時攻撃力

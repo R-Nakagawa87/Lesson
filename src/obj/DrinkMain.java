@@ -8,12 +8,12 @@ public class DrinkMain {
 
 		int sum=0;
 
-		ArrayList<Drink> drinks = new ArrayList<Drink>();
-		drinks.add( new Drink("コーラ", 500));
-		drinks.add( new Drink("サイダー", 350));
-		drinks.add( new Drink("コーヒー", 200));
+		ArrayList<Drink> drinkList = new ArrayList<Drink>();
+		drinkList.add( new Drink("コーラ", 500));
+		drinkList.add( new Drink("サイダー", 350));
+		drinkList.add( new Drink("コーヒー", 200));
 
-		for(Drink drink:drinks) {
+		for(Drink drink:drinkList) {
 			drink.show();
 			sum += drink.amount ;
 		}

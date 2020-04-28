@@ -53,10 +53,16 @@ public class Main {
 		System.out.println("現在のポイント：" + dm.point);
 
 		//日付の表示
-		Hizuke hzk = new Hizuke();
-		hzk.show(4, 27);
+		Hizuke hzk = new Hizuke(4,28);
+		hzk.show();
 
-		//
+		//日時を表示
+		Nichiji ncj = new Nichiji(4,28,15,06);
+		ncj.show();
+
+
+		Book bk = new Book("海", 600, "田中五郎");
+		bk.show();
 
 
 	}

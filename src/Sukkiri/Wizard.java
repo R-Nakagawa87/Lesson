@@ -1,9 +1,6 @@
 package Sukkiri;
 
-public class Wizard {
-
-	String name;
-	int hp;
+public class Wizard extends Character{
 
 
 	//コンストラクタ
@@ -12,6 +9,8 @@ public class Wizard {
 		this.hp = 80;
 	}
 
+
+	//ヒール
 	public void heal(Hero h, int healPoint) {
 		h.hp += healPoint;
 		System.out.println(this.name + "は" + h.name + "を" + healPoint + "回復した");

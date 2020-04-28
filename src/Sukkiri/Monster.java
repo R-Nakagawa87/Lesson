@@ -38,4 +38,7 @@ public abstract class Monster implements Creature{
 		this.baseAttackDamege = baseAttackDamege;
 	}
 
+	public void run() {
+		System.out.println(this.getName());
+	}
 }

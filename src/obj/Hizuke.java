@@ -4,6 +4,11 @@ public class Hizuke {
 
 	int month, day;
 
+	public Hizuke(int month,int day) {
+		this.month = month;
+		this.day = day;
+	}
+
 
 	void show() {
 		System.out.println(this.month + "月" + this.day + "日");
