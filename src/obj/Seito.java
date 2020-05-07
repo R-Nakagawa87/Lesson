@@ -8,6 +8,15 @@ public class Seito {
 	double ave;
 
 
+	public Seito() {
+		this.name=name;
+		this.kokugo=kokugo;
+		this.sansu=sansu;
+		this.shakai=shakai;
+	}
+
+
+
 	public Seito(String name,int kokugo,int sansu,int shakai) {
 		this.name=name;
 		this.kokugo=kokugo;

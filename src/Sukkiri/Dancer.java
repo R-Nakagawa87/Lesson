@@ -17,4 +17,8 @@ public class Dancer extends Character {
 		System.out.println("HPと攻撃力が5上がった");
 	}
 
+
+	public void run() {
+		System.out.println(this.name+"は逃げ出した");
+	}
 }

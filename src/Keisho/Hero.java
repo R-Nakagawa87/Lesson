@@ -1,19 +1,36 @@
 package Keisho;
 
-public class Hero{
+public class Hero extends NamedCharacter{
 
 	String name;
 	int hp;
 
 
 	public Hero(String name) {
-		this.name = name;
-		this.hp = 100;
+		setName(name);
+		setHp(100);
 	}
 
 	public void attack(Matango m) {
 		System.out.println(this.name+"の攻撃。"+10+"ダメージを与えた");
 		m.hp -=10;
+	}
+
+	public String toString() {
+		return "名前："+getName()+"/ HP："+getHp();
+	}
+
+	public boolean equals(Object o) {
+		if(this==o) {
+			return true;
+		}
+		if(o instanceof Hero) {
+			Hero h = (Hero)o;
+			if(this.name.equals(h.name)) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	//眠った時の行動

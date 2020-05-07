@@ -8,7 +8,7 @@ public class SuperHero extends Hero{
 	//コンストラクタ
 	public SuperHero(String name) {
 		this.name = name;
-		this.hp = 120;
+		setHp(120);
 		this.baseAttackDamage = 15;
 	}
 
@@ -38,6 +38,6 @@ public class SuperHero extends Hero{
 	public void run() {
 		System.out.println(this.name + "は撤退した");
 		System.out.println("GAME OVER");
-		System.out.println("最終HPは" + this.hp +"でした");
+		System.out.println("最終HPは" + getHp() +"でした");
 	}
 }

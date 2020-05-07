@@ -7,6 +7,12 @@ public class SuperHero extends Hero{
 		this.hp = 120;
 	}
 
+
+	public SuperHero(String name) {
+		super(name);
+		this.hp = 120;
+	}
+
 	boolean flying;
 
 	public void Fly() {

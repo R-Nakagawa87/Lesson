@@ -1,6 +1,6 @@
 package Sukkiri;
 
-public class Character implements Creature{
+public abstract class Character implements Creature{
 
 	//名前を定義
 	String name;
@@ -12,22 +12,21 @@ public class Character implements Creature{
 	}
 
 	//HPを定義
-		private int hp;
-		public int getHp() {
-			return this.hp;
-		}
-		public void setHp(int hp) {
-			this.hp = hp;
-		}
+	private int hp;
+	public int getHp() {
+		return this.hp;
+	}
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
 
+	//剣を定義
 	Sword sword;
 	int baseAttackDamage;	//基礎攻撃力
 	int attackDamage;	//装備使用時攻撃力
 
 	//逃げる
-	public void run() {
-		System.out.println(this.name+"は逃げ出した");
-	}
+	 public abstract void run();
 
 	//戦う
 	public void attack(int dame, Monster m) {

@@ -28,12 +28,12 @@ public class Main {
 		sh.attackDamage = sh.baseAttackDamage + sh.sword.damage;
 
 		//モンスター1生成
-		Matango m1 = new Matango();
+		Matango m1 = new Matango('A');
 		m1.setHp(50) ;
 		m1.suffix = 'A';
 
 		//モンスター2生成
-		Matango m2 = new Matango();
+		Matango m2 = new Matango('B');
 		m2.setHp(50);
 		m2.suffix = 'B';
 
