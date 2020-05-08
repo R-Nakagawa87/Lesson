@@ -2,17 +2,41 @@ package obj;
 
 public class Seito {
 
+	//Field
+	private String name;
+	private int kokugo, sansu, shakai;
+	private double ave;
 
-	String name;
-	int kokugo, sansu, shakai;
-	double ave;
-
-
+	//Constructor
 	public Seito() {
 		this.name=name;
 		this.kokugo=kokugo;
 		this.sansu=sansu;
 		this.shakai=shakai;
+	}
+
+
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public int getKokugo() {
+		return kokugo;
+	}
+
+
+
+	public int getSansu() {
+		return sansu;
+	}
+
+
+
+	public int getShakai() {
+		return shakai;
 	}
 
 
@@ -24,7 +48,7 @@ public class Seito {
 		this.shakai=shakai;
 	}
 
-	void show() {
+	public void show() {
 		System.out.println("テスト結果 氏名："+this.name);
 		System.out.println("国語："+this.kokugo+"点 算数："+this.sansu+"点 社会："+this.shakai+"点");
 		System.out.println("合計点数："+this.goukei());

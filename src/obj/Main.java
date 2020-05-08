@@ -5,8 +5,8 @@ public class Main {
 	public static void main(String[] args) {
 		//三角形の面積を求める
 		Sankaku s = new Sankaku();
-		s.hight = 10;
-		s.width = 2;
+		s.setHight(10);
+		s.setWidth(2);
 
 		Sankaku san = new Sankaku(50,8);
 
@@ -41,16 +41,6 @@ public class Main {
 		En en = new En();
 		en.menseki(2);
 		en.ensyu(2);
-
-		//電子マネー
-		DensiMoney dm = new DensiMoney();
-		dm.charge(1000);
-		dm.buy(500);
-		System.out.println("現在の金額：" + dm.kingaku);
-		System.out.println("現在のポイント：" + dm.point);
-		dm.change();
-		System.out.println("現在の金額：" + dm.kingaku);
-		System.out.println("現在のポイント：" + dm.point);
 
 		//日付の表示
 		Hizuke hzk = new Hizuke(4,28);

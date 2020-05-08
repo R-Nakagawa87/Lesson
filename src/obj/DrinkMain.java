@@ -12,10 +12,11 @@ public class DrinkMain {
 		drinkList.add( new Drink("コーラ", 500));
 		drinkList.add( new Drink("サイダー", 350));
 		drinkList.add( new Drink("コーヒー", 200));
+		drinkList.add( new Sake("ビール", 500, 5));
 
 		for(Drink drink:drinkList) {
 			drink.show();
-			sum += drink.amount ;
+			sum += drink.getAmount();
 		}
 
 		System.out.println("合計："+sum+"ml");

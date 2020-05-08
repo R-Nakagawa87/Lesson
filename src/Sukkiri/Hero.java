@@ -2,18 +2,35 @@ package Sukkiri;
 
 public class Hero extends Character{
 
+	public static int money=1000;
+
+
+//	public int getMoney() {
+//		return money;
+//	}
+//	public void setMoney(int money) {
+//		this.money = money;
+//	}
+
+
 	//コンストラクタ
 	public Hero(String name) {
-		this.name = name;
+		this.setName(name);
 		this.setHp(100);
-		this.baseAttackDamage = 10;
+		this.setBaseAttackDamage(10);
 	}
 
 	public Hero() {
 		this.name = "Mob";
 		this.setHp(100);
-		this.baseAttackDamage = 10;
+		this.setBaseAttackDamage(10);
 	}
+
+
+	public static void setRandomMoney() {
+		Hero.money = (int)(Math.random()*1000);
+	}
+
 
 	//攻撃時の行動
 	public void attack(int dame, Matango m) {

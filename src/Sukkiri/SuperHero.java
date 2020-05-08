@@ -9,7 +9,7 @@ public class SuperHero extends Hero{
 	public SuperHero(String name) {
 		this.name = name;
 		setHp(120);
-		this.baseAttackDamage = 15;
+		this.setBaseAttackDamage(15);
 	}
 
 

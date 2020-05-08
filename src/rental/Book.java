@@ -8,7 +8,7 @@ public class Book extends Item{
 
 	@Override
 	public int getPrice() {
-		return 50*this.days;
+		return 50*this.getDays();
 	}
 
 }

@@ -2,8 +2,32 @@ package obj;
 
 public class DensiMoney {
 
-	int kingaku;
-	double point;
+	//Field
+	private int kingaku;
+	private double point;
+
+
+	//Constructor
+	public DensiMoney() {
+
+	}
+
+	public DensiMoney(int kingaku, double point) {
+		super();
+		this.kingaku = kingaku;
+		this.point = point;
+	}
+
+
+	//getter
+	public int getKingaku() {
+		return kingaku;
+	}
+
+	public double getPoint() {
+		return point;
+	}
+
 
 
 	void charge(int m) {
@@ -20,7 +44,7 @@ public class DensiMoney {
 			System.out.println("残高が" + (m - kingaku) + "足りません");
 		}
 	}
-		
+
 	void change() {
 		kingaku += point;
 		point -= point;
