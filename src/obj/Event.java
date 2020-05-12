@@ -21,7 +21,6 @@ public class Event {
 
 	SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日");
 
-
 	ArrayList<Sankasha> sankaList = new ArrayList<Sankasha>();
 
 	public void add(Sankasha s) {
